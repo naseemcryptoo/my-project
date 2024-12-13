@@ -124,16 +124,18 @@ and promotes sustainability in e-commerce
 ### Virtual Try-On Interface (After trail)
 ![Virtual Try-On](Screenshots/TrialAfter.png)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 
 ## Future Improvements
 
 - Enhanced AR integration for mobile devices.
 - AI-powered recommendations for users based on try-on data.
 - Support for additional file formats and datasets.
+
+---
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
