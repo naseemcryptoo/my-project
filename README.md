@@ -52,9 +52,6 @@ and promotes sustainability in e-commerce
 ### Product Display page
 ![Product Details](Screenshots/ProductDisplay.png)
 
-### Virtual Try-On Interface (Before trail)
-![Virtual Try-On](Screenshots/TrialBefore.png)
-
 ### Virtual Try-On Interface (After trail)
 ![Virtual Try-On](Screenshots/TrialAfter.png)
 
