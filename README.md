@@ -116,13 +116,13 @@ and promotes sustainability in e-commerce
 ![Home Page](Screenshots/Homepage.png)
 
 ### Product Display page
-![Product Details](Screenshots/Product Display.png)
+![Product Details](Screenshots/ProductDisplay.png)
 
 ### Virtual Try-On Interface (Before trail)
-![Virtual Try-On](Screenshots/Trial before.png)
+![Virtual Try-On](Screenshots/TrialBefore.png)
 
 ### Virtual Try-On Interface (After trail)
-![Virtual Try-On](Screenshots/Trial after.png)
+![Virtual Try-On](Screenshots/TrialAfter.png)
 
 ## License
 
