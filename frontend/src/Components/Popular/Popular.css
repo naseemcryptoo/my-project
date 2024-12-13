@@ -1,0 +1,153 @@
+/* Container Styles */
+.popular {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* gap: 20px; */
+   padding: 3rem 1.5rem;
+   background-color: #f7efed;
+   text-align: center;
+ }
+ 
+ .popular h1 {
+   color: #330008e5;
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+   letter-spacing: 1.2px;
+   text-transform: uppercase;
+ }
+ 
+ .popular h4 {
+   color: #666;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   letter-spacing: 0.8px;
+   font-family:monospace;
+ }
+ 
+ .popular hr {
+   width: 150px;
+   height: 6px;
+   background: #794242;
+   border: none;
+   border-radius: 10px;
+   margin-bottom: 1.5rem;
+ }
+ 
+ /* Grid Container */
+ .popular-item {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 4rem;
+   width: 100%;
+   max-width: 1400px;
+ }
+ 
+ /* Individual Item Styling */
+ .item {
+   background: #fff;
+   border-radius: 15px;
+   overflow: hidden;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   cursor: pointer;
+   
+ }
+ 
+ .item:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+   
+ }
+ 
+ /* Ensure Full Image Display */
+ .item img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover; /* Ensure the image covers the container without distortion */
+ }
+ 
+ /* Item Details */
+ .item-details {
+   padding: 1rem;
+   text-align: center;
+   
+ }
+ 
+ .item-details h3 {
+   font-size: 1.3rem;
+   color: #333;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .item-details .price {
+   display: flex;
+   justify-content: center;
+   gap: 0.5rem;
+   font-size: 1.2rem;
+   
+ }
+ 
+ .item-details .new-price {
+   color: #ff6b6b;
+   font-weight: bold;
+ }
+ 
+ .item-details .old-price {
+   color: #999;
+   text-decoration: line-through;
+   font-size: 1rem;
+ }
+ 
+ /* Explore More Button */
+ .more {
+   padding: 1rem 2rem;
+   background-color: #be6161;
+   color: white;
+   border: none;
+   border-radius: 50px;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   margin-top: 2rem;
+ }
+ 
+ .more:hover {
+   background-color: #e63946;
+   transform: translateY(-3px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .more:active {
+   transform: translateY(0);
+ }
+ 
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+   .popular h1 {
+     font-size: 2.2rem;
+   }
+   .popular h4 {
+     font-size: 1rem;
+   }
+   .popular-item {
+     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+   }
+ }
+ 
+ @media (max-width: 500px) {
+   .popular h1 {
+     font-size: 1.8rem;
+   }
+   .popular-item {
+     grid-template-columns: 1fr;
+   }
+   .more {
+     width: 80%;
+   }
+ }
+ 

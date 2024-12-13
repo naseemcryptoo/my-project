@@ -1,0 +1,186 @@
+/* General Layout */
+.update-product {
+  background-color: #eedec7; /* Light background color */
+  padding: 40px;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.update-product-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.update-product-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #18589c;
+  margin-bottom: 10px;
+}
+
+.update-product-header p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+/* Form Fields */
+.updateproduct-itemfield {
+  margin-bottom: 20px;
+}
+
+.updateproduct-itemfield p {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.updateproduct-itemfield input {
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.updateproduct-itemfield input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Product Image */
+.updateproduct-thumbnail-img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain; /* Ensures full image is visible while preserving aspect ratio */
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+
+/* Buttons */
+.updateproduct-btn,
+.fetch-product-btn {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #86731a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.updateproduct-btn:hover,
+.fetch-product-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.updateproduct-btn:active,
+.fetch-product-btn:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .update-product {
+    padding: 30px;
+  }
+
+  .update-product h1 {
+    font-size: 24px;
+  }
+
+  .updateproduct-itemfield input {
+    font-size: 14px;
+  }
+
+  .updateproduct-btn {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .fetch-product-btn {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .update-product {
+    padding: 20px;
+  }
+
+  .update-product h1 {
+    font-size: 22px;
+  }
+
+  .updateproduct-itemfield {
+    margin-bottom: 15px;
+  }
+
+  .updateproduct-itemfield input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .updateproduct-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .fetch-product-btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .updateproduct-thumbnail-img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .update-product {
+    padding: 15px;
+  }
+
+  .update-product h1 {
+    font-size: 18px;
+  }
+
+  .updateproduct-itemfield input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .updateproduct-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .fetch-product-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .updateproduct-thumbnail-img {
+    max-height: 150px;
+  }
+}

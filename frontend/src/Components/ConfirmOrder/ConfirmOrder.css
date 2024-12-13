@@ -1,0 +1,226 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Main container */
+.confirm-order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ecc7be, #f8f9fa);
+}
+
+/* Order Details Section */
+.order-details {
+  background: #f7efed;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 48%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.order-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.order-details-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ff7300;
+}
+
+/* Form Elements */
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #495057;
+  background: #f8f9fa;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #e7b77f;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.form-textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Payment Method Section */
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.payment-option input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Button */
+.confirm-order-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background: #ecca58;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.confirm-order-button:hover {
+  background: #218838;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.confirm-order-button:active {
+  transform: translateY(0);
+}
+
+/* Cart Summary Section */
+.cart-summary {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 48%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cart-summary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.cart-summary-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f7736e;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cart-item-image:hover {
+  transform: scale(1.1);
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.cart-item-quantity,
+.cart-item-total {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Total Amount */
+.cart-summary-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: right;
+  color: #495057;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .confirm-order {
+    flex-direction: column;
+  }
+
+  .order-details,
+  .cart-summary {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .confirm-order-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cart-item-name {
+    font-size: 0.9rem;
+  }
+
+  .cart-summary-total {
+    font-size: 1rem;
+  }
+}

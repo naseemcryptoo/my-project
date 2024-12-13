@@ -1,0 +1,187 @@
+/* Main wrapper for the whole login/signup page */
+.loginsignup {
+    width: 100%;
+    height: 100vh; /* Changed to fill the full viewport height */
+    background: #fce3fe;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Project Introduction Section */
+.project-intro {
+    width: 80%;
+    max-width: 600px;
+    
+    text-align: center;
+    margin-bottom: 10px; /* Space between intro and form */
+}
+
+.project-intro h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-intro p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Container for the login/signup form */
+.loginsignup-container {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Title for the form (Login/Signup) */
+.loginsignup-container h1 {
+    margin: 20px 0px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+/* Container for the input fields */
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+    
+}
+
+/* Input fields */
+.loginsignup-fields input {
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    
+}
+
+/* Focus effect for input fields */
+.loginsignup-fields input:focus {
+    border-color: #e48c8c;
+    box-shadow: 0 0 5px rgba(241, 161, 137, 0.5);
+}
+
+/* Button styles */
+.loginsignup-container button {
+    width: 100%;
+    height: 72px;
+    color: white;
+    background: #682525;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+/* Button hover effect */
+.loginsignup-container button:hover {
+    background-color: #31361c;
+}
+
+/* Disabled button state */
+.loginsignup-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Login/Signup toggle text */
+.loginsignup-login {
+    margin-top: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Style for the link text (Login / Signup) */
+.loginsignup-login span {
+    color: #ff4141;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.loginsignup-login span:hover {
+    text-decoration: underline;
+}
+
+/* Agreement checkbox text */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Responsive styles for screens smaller than 1280px */
+@media(max-width: 1280px) {
+    .loginsignup-container {
+        width: auto;
+        max-width: 500px;
+    }
+    .loginsignup-fields {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .loginsignup-fields input {
+        height: 65px;
+    }
+    .loginsignup-container button {
+        width: 100%;
+    }
+    .loginsignup-login {
+        font-size: 16px;
+    }
+    .loginsignup-agree {
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+/* Responsive styles for screens smaller than 800px */
+@media(max-width: 800px) {
+    .loginsignup-container {
+        padding: 20px 30px;
+    }
+    .loginsignup-container h1 {
+        font-size: 24px;
+    }
+    .loginsignup-fields {
+        margin-top: 20px;
+    }
+    .loginsignup-fields input {
+        height: 50px;
+    }
+    .loginsignup-container button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
