@@ -33,6 +33,40 @@ and promotes sustainability in e-commerce
 
 ---
 
+## Usage
+
+### Try-On Feature
+
+1. Upload an image or choose a sample model.
+2. Select a clothing item from the catalog.
+3. View the virtual try-on result.
+4. Add the product to your cart.
+
+---
+
+## Screenshots
+
+### Home Page
+![Home Page](Screenshots/Homepage.png)
+
+### Product Display page
+![Product Details](Screenshots/ProductDisplay.png)
+
+### Virtual Try-On Interface (Before trail)
+![Virtual Try-On](Screenshots/TrialBefore.png)
+
+### Virtual Try-On Interface (After trail)
+![Virtual Try-On](Screenshots/TrialAfter.png)
+
+
+## Future Improvements
+
+- Enhanced AR integration for mobile devices.
+- AI-powered recommendations for users based on try-on data.
+- Support for additional file formats and datasets.
+
+---
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -96,40 +130,6 @@ and promotes sustainability in e-commerce
 - `datasets/`: Includes datasets for machine learning and model training.
 - `models/`: Pre-trained machine learning models.
 - `scripts/`: Helper scripts for data preprocessing and model integration.
-
----
-
-## Usage
-
-### Try-On Feature
-
-1. Upload an image or choose a sample model.
-2. Select a clothing item from the catalog.
-3. View the virtual try-on result.
-4. Add the product to your cart.
-
----
-
-## Screenshots
-
-### Home Page
-![Home Page](Screenshots/Homepage.png)
-
-### Product Display page
-![Product Details](Screenshots/ProductDisplay.png)
-
-### Virtual Try-On Interface (Before trail)
-![Virtual Try-On](Screenshots/TrialBefore.png)
-
-### Virtual Try-On Interface (After trail)
-![Virtual Try-On](Screenshots/TrialAfter.png)
-
-
-## Future Improvements
-
-- Enhanced AR integration for mobile devices.
-- AI-powered recommendations for users based on try-on data.
-- Support for additional file formats and datasets.
 
 ---
 
