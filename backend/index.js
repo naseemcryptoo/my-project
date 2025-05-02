@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // MongoDB Connection
-mongoose.connect("mongodb+srv://greateststackdev:007007007@cluster0.32ffa.mongodb.net/e-commerce")
+mongoose.connect("mongodb://127.0.0.1:27017/Ecommerce")
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.error("MongoDB connection error:", err));
 
